@@ -7,10 +7,10 @@ public class FirstMenu extends Menu {
     public FirstMenu() {
         super("Choose From the Options",
 
-                new Option("Set books by filter",
+                new Option("Get books by filter",
                         BooksQuery::queryBooks
                 ),
-                new Option("Get books by filter",
+                new Option("Add a new book",
                         BooksQuery::queryBooks
                 ),
 
@@ -19,7 +19,7 @@ public class FirstMenu extends Menu {
                         new SecondMenu()::run
                 ),
 
-                new Option("Add books by filter",
+                new Option("Delete all books",
                         BooksQuery::queryBooks
                 )
         );
